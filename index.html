@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>De-risking — the physics backbone — Kronos Fusion Energy</title>
+<meta name="description" content="Kronos Fusion Energy's de-risking analysis center: the mathematical and physics backbone — 141 published validators, computed from first principles and openly deposited.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="kfe-shell.css">
+<script>window.KFE_SECTION='derisking';window.KFE_SUBNAV={title:'De-risking',active:'all',items:[
+ {label:'Overview',tab:'all'},{label:'Physics backbone',tab:'physics'},{label:'Validators',tab:'runs'},
+ {label:'Gates & tiers',tab:'gates'},{label:'Evidence',tab:'evidence'}]};</script>
+<script src="kfe-shell.js" defer></script>
+<link rel="stylesheet" href="data:text/css;base64,"><style>
+:root{--bg:#232c39;--panel:#2a3441;--band:#1f2733;--line:rgba(150,165,190,.20);--gold:#d4ad5c;--blue:#5ea0c0;--ink:#e0e5eb;--mut:#8fa0b8;--green:#7bc47f;--amber:#d9a441;--red:#e06b6b;--violet:#c9a3e0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.6}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px 90px}
+a{color:var(--gold);text-decoration:none}
+.kick{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.hero{padding:40px 0 26px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(28px,4.5vw,46px);line-height:1.05;margin:.2em 0 .25em}
+.hero .lede{font-size:18px;color:#cdd7e2;max-width:70ch}
+.note{font-family:'Space Mono',monospace;font-size:11.5px;color:var(--mut);margin-top:14px}
+.ctarow{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:8px;padding:10px 16px;font-size:14px;font-weight:600}
+.btn.gold{background:var(--gold);color:#1a222c}.btn.ghost{border:1px solid var(--line);color:var(--gold)}
+.btn:hover{filter:brightness(1.07)}
+section.tabsec{padding:30px 0;border-bottom:1px solid var(--line)}
+h2{font-size:24px;margin:0 0 6px}.sub{color:var(--mut);font-size:14px;margin:0 0 18px;max-width:78ch}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+.tools input,.tools select{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:8px 11px;font:13px 'Space Grotesk'}
+.scrollx{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin-top:8px}
+table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:680px}
+thead th{text-align:left;padding:9px 11px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);background:var(--band);border-bottom:1px solid var(--line)}
+tbody td{padding:8px 11px;border-bottom:1px solid rgba(150,165,190,.10);color:#cdd7e2;vertical-align:top}
+tbody tr:hover td{background:var(--band)}
+td.k{font-family:'Space Mono',monospace;color:var(--ink);white-space:nowrap}
+.pill{display:inline-block;padding:2px 8px;border-radius:20px;font-family:'Space Mono',monospace;font-size:10px}
+.p-green{background:rgba(123,196,127,.16);color:var(--green)}.p-blue{background:rgba(94,160,192,.16);color:var(--blue)}.p-gold{background:rgba(212,173,92,.16);color:var(--gold)}.p-mut{background:rgba(143,160,184,.14);color:var(--mut)}
+.bb{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+.bcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.bcard .v{font-size:26px;color:var(--gold);font-weight:700;font-family:'Space Grotesk'}
+.bcard .l{font-size:12.5px;color:var(--mut);margin-top:2px}
+.bcard p{font-size:13px;color:#cdd7e2;margin:9px 0 0;line-height:1.5}
+.bcard .cond{font-family:'Space Mono',monospace;font-size:11px;color:var(--blue);margin-top:6px}
+.tierrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:16px}
+.tier{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;border-top:3px solid var(--gold)}
+.tier.t2{border-top-color:var(--blue)}.tier.t3{border-top-color:var(--violet)}
+.tier b{display:block;font-size:15px;color:var(--ink)}.tier .c{font-size:28px;color:var(--gold);font-weight:700}
+.tier .lk{font-size:12px;color:var(--mut);margin-top:6px}
+.foot{margin-top:34px;color:var(--mut);font-size:12px;line-height:1.6}
+.tabsec[hidden]{display:none}
+</style></head><body>
+<div class="wrap">
+  <div class="hero">
+    <span class="kick">Kronos Fusion Energy · De-risking · The physics backbone</span>
+    <h1>Every number, computed and published.</h1>
+    <p class="lede">The mathematical and physics backbone of the Kronos program — the de-risking campaign that turns a two-machine fusion design into an evidence base. Each validator is computed from first principles on our in-house HPC and openly deposited; the analyses, the register serials, and the machines all connect.</p>
+    <p class="note">Isotopes first, electricity next — building toward first construction in 2027 · computed on the in-house Kronos HPC · GPU acceleration is the next phase.</p>
+    <div class="ctarow">
+      <a class="btn gold" href="https://model.kronosfusionenergy.com" target="_blank">Explore the 3D model →</a>
+      <a class="btn ghost" href="https://doi.org/10.5281/zenodo.22133057" target="_blank">Open De-Risking Register 1.0 ↗</a>
+      <a class="btn ghost" href="/blueprints/">Full analysis center — Kronos team 🔒</a>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="tabsec" data-tab="all">
+    <span class="kick">Overview</span><h2>The de-risking campaign</h2>
+    <p class="sub">The published Tier-1 campaign — 141 validators frozen at the ratified point. The deeper hardening and concept tiers, the requirements traceability, and the full run register are in the Kronos team data room.</p>
+    <div id="kpis"></div>
+    <div class="bcard" style="margin-top:16px;border-left:3px solid var(--gold)"><p style="margin:0;font-size:15px;color:#e0e5eb;line-height:1.65">Kronos is not a rendering — it is a <b>computed, published machine</b>. Every performance claim traces to a first-principles calculation on our in-house HPC: negative-triangularity turbulence suppression (CGYRO), 99.98% alpha confinement (ASCOT5), tritium self-sufficiency (OpenMC), and a converged free-boundary equilibrium (FreeGS) — <b>141 validators, frozen 2026-08-27 and deposited with permanent DOIs</b>. The core bet — that negative triangularity calms the turbulence which leaks heat — is confirmed across ion and electron scales and is robust to collisionality. What remains is engineering execution, now underway.</p></div>
+    <div class="tierrow">
+      <div class="tier"><span class="kick">Tier 1 · published</span><div class="c" id="t1">141</div><b>De-risking campaign (frozen)</b><div class="lk">164 gates · campaign complete at the 2026-08-27 freeze · openly deposited</div></div>
+      <div class="tier t2"><span class="kick">Tier 2 · internal</span><div class="c">🔒</div><b>Next-level hardening</b><div class="lk">In the Kronos team data room</div></div>
+      <div class="tier t3"><span class="kick">Tier 3 · internal</span><div class="c">🔒</div><b>Concept expansion</b><div class="lk">In the Kronos team data room</div></div>
+    </div>
+  </section>
+
+  <!-- PHYSICS BACKBONE -->
+  <section class="tabsec" data-tab="physics" hidden>
+    <span class="kick">Physics backbone</span><h2>The results that carry the design</h2>
+    <p class="sub">Headline numbers with the condition that makes each hold — the load-bearing physics, canon-locked and computed from first principles.</p>
+    <div class="bb" id="physcards"></div>
+  </section>
+
+  <!-- VALIDATORS -->
+  <section class="tabsec" data-tab="runs" hidden>
+    <span class="kick">Validators</span><h2>The published run register</h2>
+    <p class="sub">Every Tier-1 validator — id, code, product it de-risks, and result. Filter by product or code; each is part of the openly-deposited register.</p>
+    <div class="tools"><input id="fr" placeholder="filter id / code / product / result…"><select id="fprod"><option value="">all products</option></select><span class="note" id="rn"></span></div>
+    <div id="rwrap" class="scrollx"></div>
+  </section>
+
+  <!-- GATES & TIERS -->
+  <section class="tabsec" data-tab="gates" hidden>
+    <span class="kick">Gates & tiers</span><h2>What moves the thesis</h2>
+    <p class="sub">The de-risking gates and how they connect to the machines. Open gates are tracked to closure; validated gates are published.</p>
+    <div id="gatewrap"></div>
+  </section>
+
+  <!-- EVIDENCE -->
+  <section class="tabsec" data-tab="evidence" hidden>
+    <span class="kick">Evidence</span><h2>Computed &amp; published</h2>
+    <p class="sub">The evidence base by analysis family, and the permanent deposits anyone can check.</p>
+    <div id="evwrap"></div>
+    <p class="note" style="margin-top:14px">Computed on the in-house Kronos HPC; published with permanent DOIs. GPU acceleration is the next phase. Cinematic 3D renders are produced separately.</p>
+  </section>
+
+  <div class="foot">© 2026 Kronos Fusion Energy — a fusion energy company. The public de-risking center shows the Tier-1 published campaign; the full run register, hardening tiers, and requirements traceability are available to the Kronos team. De-Risking Register 1.0 · DOI 10.5281/zenodo.22133057.</div>
+</div>
+
+<script src="data/public_runs.js"></script><script src="data/analysis_data.js"></script><script src="_charts.js"></script>
+<script>
+var PR=(window.PUBRUNS||[]).filter(function(r){var id=(r.id||'');return id.indexOf('BR-L2-A1c-MS')<0 && id.indexOf('BR-CX-03')<0 && !/deep.?nt|δ=[−-]0\.5/i.test((r.purpose||'')+' '+(r.result||''));}), A=window.ANALYSIS||{meta:{by_family:{},counts:{}},deposits:[]};
+function esc(s){return (s==null?'':(''+s)).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function pill(t,c){return '<span class="pill '+c+'">'+esc(t)+'</span>';}
+var prodName={HYP:'Hyperion',BRN:'Burner',AEG:'Aegis',MTV:'MetroVolt',ALL:'All three',breeder:'Hyperion',burner:'Burner'};
+// KPIs
+document.getElementById('kpis').innerHTML=CH.kpi([
+ {v:PR.length,label:'Published validators',sub:'Tier-1 frozen campaign',cls:'green'},
+ {v:'3.076',label:'Breeder fusion Q',sub:'Hyperion',cls:'blue'},
+ {v:'1.318',label:'Burner Q_E',sub:'net-electric',cls:'blue'},
+ {v:44,label:'Publications',sub:'openly published',cls:'violet'},
+ {v:(A.deposits.length||4),label:'Permanent DOIs',sub:'checkable',cls:'gold'},
+ {v:0,label:'Open flags (public)',sub:'campaign frozen'}
+]);
+document.getElementById('t1').textContent=PR.length;
+// physics backbone cards (canon-safe, result · condition · code)
+var PHYS=[
+ {v:'−40–45%',l:'Turbulent heat loss, ion scale (CGYRO)',p:'Negative triangularity cuts ITG+TEM turbulent heat flux versus the positive-triangularity twin — the core confinement bet.',c:'nonlinear gyrokinetics · kinetic electrons · real mass · a/L_T=3.0 · DOI 22136279'},
+ {v:'−79–80%',l:'Turbulent heat loss, electron scale (CGYRO)',p:'At the electron scale NT drops heat flux far below PT (Q_e 23.4 vs 110.7).',c:'nonlinear ETG · electron scale · DOI 22136279'},
+ {v:'56–66%',l:'…and it is collisionality-robust',p:'The NT growth-rate suppression holds across a wide collisionality scan — not a fragile result.',c:'linear γ metric · ν*×0.25–4 · DOI 22136279'},
+ {v:'99.98%',l:'Alpha-particle confinement (ASCOT5)',p:'Fusion alphas stay confined to heat the plasma, not the wall (prompt loss 0.023%, first-wall 0.083 kW/m²).',c:'10⁵ markers · guiding-centre · real equilibrium'},
+ {v:'TBR → 1.18–1.20',l:'Tritium self-sufficiency (OpenMC)',p:'The published breeding ladder climbs tritium-positive — the breeder’s defining gate.',c:'3-D transport · ENDF/B-VIII.0 · solid-Be blanket · DOI 22133057'},
+ {v:'δ = −0.334',l:'Free-boundary equilibrium (FreeGS)',p:'A converged, controllable equilibrium underpins the design point (κ 2.0, Ip 9.66 MA, β_N 2.13, q95 2.90).',c:'129×129 Grad–Shafranov'},
+ {v:'Q = 3.076',l:'Breeder design point',p:'Fusion gain 3.076 at P_fus 85.04 MW — the frozen operating point (δ −0.30, B0 8 T, R0 1.20, A 2.5). No net-electricity claim for the breeder.',c:'0-D balances · DOI 22133057'},
+ {v:'Q_E = 1.318',l:'Burner net-electric gain',p:'The D–³He burner returns more electricity than it draws — 4298.5 MW fusion, 850 MWe — on the plug knee (warm-fill threshold 6.25% = 1/16).',c:'0-D balances + DCLC dispersion · DEC η 0.49 · DOI 22133057'},
+ {v:'stable',l:'Ideal MHD',p:'Mercier- and ballooning-stable, with β_N below the no-wall Troyon limit.',c:'ideal MHD · BR-L2-A19'}
+];
+document.getElementById('physcards').innerHTML=PHYS.map(function(x){
+ return '<div class="bcard"><div class="v">'+esc(x.v)+'</div><div class="l">'+esc(x.l)+'</div><p>'+esc(x.p)+'</p><div class="cond">'+esc(x.c)+'</div></div>';}).join('');
+// validators table + product filter
+var prods={}; PR.forEach(function(r){var p=(r.product||'—');prods[p]=(prods[p]||0)+1;});
+var sel=document.getElementById('fprod');
+Object.keys(prods).sort().forEach(function(p){sel.innerHTML+='<option value="'+esc(p)+'">'+esc(prodName[p]||p)+' ('+prods[p]+')</option>';});
+function rowsHtml(list){return '<table><thead><tr><th>ID</th><th>Code</th><th>Product</th><th>Purpose</th><th>Result</th></tr></thead><tbody>'+
+ list.map(function(r){return '<tr><td class="k">'+esc(r.id)+'</td><td class="k">'+esc(r.code||'—')+'</td><td>'+pill(prodName[r.product]||r.product||'—','p-blue')+'</td><td>'+esc(r.purpose||'')+'</td><td><span style="color:var(--mut)">'+esc(r.result||'')+'</span></td></tr>';}).join('')+'</tbody></table>';}
+function renderRuns(){var q=(document.getElementById('fr').value||'').toLowerCase(),p=sel.value;
+ var list=PR.filter(function(r){return (!p||r.product===p)&&(!q||JSON.stringify(r).toLowerCase().indexOf(q)>=0);});
+ document.getElementById('rwrap').innerHTML=rowsHtml(list);
+ document.getElementById('rn').textContent=list.length+' of '+PR.length+' validators';}
+document.getElementById('fr').addEventListener('input',renderRuns);sel.addEventListener('change',renderRuns);renderRuns();
+// gates
+var GATES=[
+ {g:'Turbulent transport (CGYRO)',s:'p-green',n:'Validated — negative-triangularity confinement basis (DOI 22136279).'},
+ {g:'Neutronics / net TBR (OpenMC)',s:'p-green',n:'Validated method; tritium self-sufficiency is the breeder’s gate (DOI 22133057).'},
+ {g:'Alpha confinement (ASCOT5)',s:'p-green',n:'99.98% — validated.'},
+ {g:'Burner plug / net-power',s:'p-gold',n:'Robust knee at R≈16; two-tier closure — the burner gate.'},
+ {g:'He-3 supply for the burner',s:'p-gold',n:'D–³He fuel path — an open program gate, tracked to closure.'}
+];
+document.getElementById('gatewrap').innerHTML='<div class="scrollx"><table><thead><tr><th>Gate</th><th>Status</th><th>Note</th></tr></thead><tbody>'+
+ GATES.map(function(x){return '<tr><td>'+esc(x.g)+'</td><td>'+pill(x.s==='p-green'?'validated':'open',x.s)+'</td><td><span style="color:var(--mut)">'+esc(x.n)+'</span></td></tr>';}).join('')+'</tbody></table></div>';
+// evidence — families donut + deposits
+var fam=A.meta.by_family||{}; var famData=Object.keys(fam).map(function(k){return {label:k,value:fam[k]};}).sort(function(a,b){return b.value-a.value;});
+document.getElementById('evwrap').innerHTML='<div class="bb"><div class="bcard" style="grid-column:span 2">'+
+ CH.donut(famData,{center:PR.length,centerSub:'published',size:170})+'</div>'+
+ '<div class="bcard"><div class="v">'+(A.deposits.length||4)+'</div><div class="l">Permanent Zenodo deposits</div>'+
+ '<p>'+(A.deposits||[]).map(function(d){return d.name?esc(d.name):'';}).filter(Boolean).slice(0,4).join(' · ')+'</p>'+
+ '<div class="cond">Register 1.0 · DOI 10.5281/zenodo.22133057</div></div></div>';
+// tabs (secondary bar dispatches kfe:subtab)
+document.addEventListener('kfe:subtab',function(e){var t=e.detail;
+ document.querySelectorAll('.tabsec').forEach(function(s){s.hidden=(s.getAttribute('data-tab')!==t);});
+});
+</script>
+</body></html>
