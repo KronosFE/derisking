@@ -45,6 +45,17 @@ td.k{font-family:'Space Mono',monospace;color:var(--ink);white-space:nowrap}
 .tier b{display:block;font-size:15px;color:var(--ink)}.tier .c{font-size:28px;color:var(--gold);font-weight:700}
 .tier .lk{font-size:12px;color:var(--mut);margin-top:6px}
 .foot{margin-top:34px;color:var(--mut);font-size:12px;line-height:1.6}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:10px}
+.vcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;border-left:3px solid var(--gold)}
+.vh{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
+.vid{font-family:'Space Mono',monospace;font-size:13px;color:var(--gold);font-weight:600;text-decoration:none}
+.vid:hover{text-decoration:underline}
+.vgate{font-size:13.5px;color:var(--ink);line-height:1.4;margin-bottom:6px}
+.vmethod{font-family:'Space Mono',monospace;font-size:10.5px;color:var(--mut);margin-bottom:8px}
+.vchips{display:flex;flex-wrap:wrap;gap:5px}
+.vchip{background:var(--band);border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-family:'Space Mono',monospace;font-size:10.5px;color:#cdd7e2}
+.vchip b{color:var(--gold);font-weight:400}
+.vres{font-family:'Space Mono',monospace;font-size:10.5px;color:var(--mut);word-break:break-word}
 .tabsec[hidden]{display:none}
 </style></head><body>
 <div class="wrap">
@@ -83,9 +94,9 @@ td.k{font-family:'Space Mono',monospace;color:var(--ink);white-space:nowrap}
   <!-- VALIDATORS -->
   <section class="tabsec" data-tab="runs" hidden>
     <span class="kick">Validators</span><h2>The published run register</h2>
-    <p class="sub">Every Tier-1 validator — id, code, product it de-risks, and result. Filter by product or code; each is part of the openly-deposited register.</p>
+    <p class="sub">Every Tier-1 validator — id, code, product it de-risks, and result. <b>Click any ID</b> for its published deposit (Register 1.0, or the CGYRO deposit for gyrokinetic runs). Full gate-level measurements + the serial→sheet stitch are in the <a href="/blueprints/">Kronos team register 🔒</a>.</p>
     <div class="tools"><input id="fr" placeholder="filter id / code / product / result…"><select id="fprod"><option value="">all products</option></select><span class="note" id="rn"></span></div>
-    <div id="rwrap" class="scrollx"></div>
+    <div id="rwrap"></div>
   </section>
 
   <!-- GATES & TIERS -->
@@ -140,11 +151,22 @@ document.getElementById('physcards').innerHTML=PHYS.map(function(x){
 var prods={}; PR.forEach(function(r){var p=(r.product||'—');prods[p]=(prods[p]||0)+1;});
 var sel=document.getElementById('fprod');
 Object.keys(prods).sort().forEach(function(p){sel.innerHTML+='<option value="'+esc(p)+'">'+esc(prodName[p]||p)+' ('+prods[p]+')</option>';});
-function rowsHtml(list){return '<table><thead><tr><th>ID</th><th>Code</th><th>Product</th><th>Purpose</th><th>Result</th></tr></thead><tbody>'+
- list.map(function(r){return '<tr><td class="k">'+esc(r.id)+'</td><td class="k">'+esc(r.code||'—')+'</td><td>'+pill(prodName[r.product]||r.product||'—','p-blue')+'</td><td>'+esc(r.purpose||'')+'</td><td><span style="color:var(--mut)">'+esc(r.result||'')+'</span></td></tr>';}).join('')+'</tbody></table>';}
+function doiFor(r){return /cgyro/i.test(r.code||'')?'10.5281/zenodo.22136279':'10.5281/zenodo.22133057';}
+// parse a "k=v; k2=v2" result string into clean metric chips
+function chips(res){if(!res)return '';
+ return res.split(/;\s*/).map(function(kv){var m=kv.split('=');if(m.length<2)return '';
+   var k=m[0].trim().replace(/_MW$/,' MW').replace(/_MA$/,' MA').replace(/_keV$/,' keV').replace(/_/g,' ');
+   var v=m[1].trim();var num=parseFloat(v);if(!isNaN(num)&&Math.abs(num)<1e6)v=(''+(Math.round(num*1000)/1000));
+   return '<span class="vchip"><b>'+esc(k)+'</b> '+esc(v)+'</span>';}).filter(Boolean).join('');}
+function cardsHtml(list){return list.map(function(r){var doi=doiFor(r);var ch=chips(r.result);
+ return '<div class="vcard"><div class="vh"><a class="vid" href="https://doi.org/'+doi+'" target="_blank" rel="noopener" title="published deposit — deeper data">'+esc(r.id)+' ↗</a>'+pill(prodName[r.product]||r.product||'—','p-blue')+'</div>'+
+  '<div class="vgate">'+esc(r.purpose||'')+'</div>'+
+  '<div class="vmethod">'+esc(r.code||'')+'</div>'+
+  (ch?'<div class="vchips">'+ch+'</div>':(r.result?'<div class="vres">'+esc(r.result)+'</div>':''))+
+  '</div>';}).join('');}
 function renderRuns(){var q=(document.getElementById('fr').value||'').toLowerCase(),p=sel.value;
  var list=PR.filter(function(r){return (!p||r.product===p)&&(!q||JSON.stringify(r).toLowerCase().indexOf(q)>=0);});
- document.getElementById('rwrap').innerHTML=rowsHtml(list);
+ document.getElementById('rwrap').innerHTML='<div class="vgrid">'+cardsHtml(list)+'</div>';
  document.getElementById('rn').textContent=list.length+' of '+PR.length+' validators';}
 document.getElementById('fr').addEventListener('input',renderRuns);sel.addEventListener('change',renderRuns);renderRuns();
 // gates
