@@ -46,7 +46,7 @@
   "code": "KRONOS_TOOLKIT surplus_kg_per_fpy",
   "product": "breeder",
   "purpose": "Tritium-cycle surplus & startup-inventory model",
-  "result": "Burn 4.974 kg-T/fpy @88.7MW (4.769 @85.04); surplus 1.691 @TBR1.34, 3.980 @1.8 (anchors match); startup 2.49/4.97/9.95 kg for tau 0.5/1/2y"
+  "result": "Burn 4.769 kg-T/fpy @ 85.04 MW (frozen); surplus 1.621 @TBR1.34, 3.815 @1.8 (anchors match); startup 2.49/4.97/9.95 kg for tau 0.5/1/2y"
  },
  {
   "id": "BR-L1-A7",
@@ -109,7 +109,7 @@
   "code": "KRONOS_TOOLKIT",
   "product": "breeder",
   "purpose": "Tritium self-sufficiency de-risked; export scale",
-  "result": "surplus_134=1.6912889114919258; surplus_180=3.979503321157472; T_kg_yr=3.836229108166553"
+  "result": "surplus_134=1.6215; surplus_180=3.8152; T_kg_yr=3.6779"
  },
  {
   "id": "BR-OUT-2",

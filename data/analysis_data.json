@@ -869,7 +869,7 @@
    "title": "BR-L1-A6 \u2014 Tritium-cycle surplus & startup-inventory model",
    "date": "",
    "code": "",
-   "result": "Burn rate at frozen P_fus 88.7 MW: 4.974 kg-T/fpy [T]",
+   "result": "Burn rate at frozen P_fus 85.04 MW: 4.769 kg-T/fpy [T]",
    "post_freeze": false,
    "has_fig": false
   },
@@ -979,7 +979,7 @@
    "title": "BR-L2-A11h \u2014 Minimum-mission-power: invert T_kg_yr(P_fus) for 1 kg-T/yr export at net TBR 1.186",
    "date": "",
    "code": "",
-   "result": "Tritium burn rate: 0.056081 kg-T/fpy per MW_fus (4.769 kg/fpy at DP 85.04 MW; 4.974 at frozen 88.7 MW) [T]",
+   "result": "Tritium burn rate: 0.056081 kg-T/fpy per MW_fus (4.769 kg/fpy at DP 85.04 MW; the frozen value at 85.04 MW) [T]",
    "post_freeze": false,
    "has_fig": false
   },
@@ -1397,7 +1397,7 @@
    "title": "BR-OUT-2 \u2014 Helium-3: a domestic flow",
    "date": "",
    "code": "",
-   "result": "T burn rate at frozen P_fus 88.7 MW: 4.974 kg-T/fpy [T]; surplus S = 1.691 kg-T/fpy (net TBR 1.34) and 3.980 kg-T/fpy (net TBR 1.8) [T] \u2014 matches toolkit anchors.",
+   "result": "T burn rate at frozen P_fus 85.04 MW: 4.769 kg-T/fpy [T]; surplus S = 1.621 kg-T/fpy (net TBR 1.34) and 3.815 kg-T/fpy (net TBR 1.8) [T] \u2014 matches toolkit anchors.",
    "post_freeze": false,
    "has_fig": false
   },
@@ -1441,7 +1441,7 @@
    "title": "BU-L1-A11 \u2014 Strategic-isotope-foundry configuration (method): T_kg_yr(P_fus) inversion",
    "date": "",
    "code": "",
-   "result": "Burn rate is exactly linear in P_fus: 0.056081 kg-T/fpy per MW_fus [T] (17.59 MeV per D\u2013T reaction); 4.974 kg-T/fpy burned at 88.7 MW [T].",
+   "result": "Burn rate is exactly linear in P_fus: 0.056081 kg-T/fpy per MW_fus [T] (17.59 MeV per D\u2013T reaction); 4.769 kg-T/fpy burned at 85.04 MW [T].",
    "post_freeze": false,
    "has_fig": false
   },
