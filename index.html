@@ -2,11 +2,11 @@
 <title>De-risking — the physics backbone — Kronos Fusion Energy</title>
 <meta name="description" content="Kronos Fusion Energy's de-risking analysis center: the mathematical and physics backbone — 141 published validators, computed from first principles and openly deposited.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="kfe-shell.css">
+<link rel="stylesheet" href="/kfe-shell.css">
 <script>window.KFE_SECTION='derisking';window.KFE_SUBNAV={title:'De-risking',active:'all',items:[
  {label:'Overview',tab:'all'},{label:'Physics backbone',tab:'physics'},{label:'Validators',tab:'runs'},
  {label:'Gates & tiers',tab:'gates'},{label:'Evidence',tab:'evidence'}]};</script>
-<script src="kfe-shell.js" defer></script>
+<script src="/kfe-shell.js" defer></script>
 <link rel="stylesheet" href="data:text/css;base64,"><style>
 :root{--bg:#232c39;--panel:#2a3441;--band:#1f2733;--line:rgba(150,165,190,.20);--gold:#d4ad5c;--blue:#5ea0c0;--ink:#e0e5eb;--mut:#8fa0b8;--green:#7bc47f;--amber:#d9a441;--red:#e06b6b;--violet:#c9a3e0}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.6}
@@ -57,7 +57,13 @@ td.k{font-family:'Space Mono',monospace;color:var(--ink);white-space:nowrap}
 .vchip b{color:var(--gold);font-weight:400}
 .vres{font-family:'Space Mono',monospace;font-size:10.5px;color:var(--mut);word-break:break-word}
 .tabsec[hidden]{display:none}
-</style></head><body>
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-9KCBWEPVPH"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-9KCBWEPVPH");</script><meta property="og:image" content="https://www.kronosfusionenergy.com/og/derisking.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.kronosfusionenergy.com/og/derisking.png">
+</head><body>
 <div class="wrap">
   <div class="hero">
     <span class="kick">Kronos Fusion Energy · De-risking · The physics backbone</span>
@@ -76,6 +82,27 @@ td.k{font-family:'Space Mono',monospace;color:var(--ink);white-space:nowrap}
     <span class="kick">Overview</span><h2>The de-risking campaign</h2>
     <p class="sub">The published Tier-1 campaign — 141 validators frozen at the ratified point. The deeper hardening and concept tiers, the requirements traceability, and the full run register are in the Kronos team data room.</p>
     <div id="kpis"></div>
+
+    <!-- De-risking Scorecard (2026-10-18) — banded colour pills; statuses mirror the Gates tab and the published open gaps -->
+    <div class="bcard kfe-scorecard" style="margin-top:16px">
+      <span class="kick">Scorecard</span>
+      <h3 style="margin:6px 0 4px;font-size:20px;color:var(--ink)">What is validated, what is open</h3>
+      <p style="margin:0 0 12px;color:var(--mut);font-size:14px;line-height:1.55">One line per gate. <span class="pill p-green">validated</span> is published and reproducible from a deposit; <span class="pill p-gold">open gate</span> is tracked to closure on the roadmap; <span class="pill p-blue">requirement</span> is a stated specification, not yet a solved design.</p>
+      <div style="overflow-x:auto"><table class="sc" style="width:100%;border-collapse:collapse;font-size:13.5px;min-width:640px">
+        <thead><tr style="color:var(--mut);font:600 11px 'Space Mono',monospace;letter-spacing:.06em;text-transform:uppercase"><th style="text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)">Gate</th><th style="text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)">Machine</th><th style="text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)">Status</th><th style="text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)">What it means</th><th style="text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)">Where to check</th></tr></thead>
+        <tbody>
+          <tr><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Turbulent transport (CGYRO)</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Breeder</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><span class="pill p-green">validated</span></td><td style="padding:9px 10px;border-bottom:1px solid var(--line);color:var(--mut)">Negative-triangularity confinement basis, nonlinear gyrokinetics.</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><a href="https://doi.org/10.5281/zenodo.22136279" target="_blank" rel="noopener">CGYRO deposit ↗</a></td></tr>
+          <tr><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Neutronics &amp; breeding (OpenMC)</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Breeder</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><span class="pill p-green">validated method</span> <span class="pill p-gold">breeder gate</span></td><td style="padding:9px 10px;border-bottom:1px solid var(--line);color:var(--mut)">Method published; tritium self-sufficiency is the breeder&rsquo;s governing gate.</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><a href="#" data-tab-link="evidence">Evidence tab</a></td></tr>
+          <tr><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Alpha confinement (ASCOT5)</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Breeder</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><span class="pill p-green">validated</span></td><td style="padding:9px 10px;border-bottom:1px solid var(--line);color:var(--mut)">99.98% alpha confinement at the frozen point.</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><a href="#" data-tab-link="runs">Validators tab</a></td></tr>
+          <tr><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Plug / net-power closure</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Burner</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><span class="pill p-gold">open gate</span></td><td style="padding:9px 10px;border-bottom:1px solid var(--line);color:var(--mut)">Robust knee at R&thinsp;&asymp;&thinsp;16; two-tier closure is the burner gate.</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><a href="#" data-tab-link="gates">Gates tab</a></td></tr>
+          <tr><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Helium-3 supply</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Burner</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><span class="pill p-gold">open gate</span></td><td style="padding:9px 10px;border-bottom:1px solid var(--line);color:var(--mut)">Bred by Hyperion; the D&ndash;&sup3;He fuel path is a program gate tracked to closure.</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><a href="/strategic-isotopes/helium-3">Helium-3 thesis</a></td></tr>
+          <tr><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Thermal barrier</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Burner</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><span class="pill p-gold">open gate</span></td><td style="padding:9px 10px;border-bottom:1px solid var(--line);color:var(--mut)">Not yet demonstrated; dated gate on the roadmap.</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><a href="/science/open-questions">Open gaps</a></td></tr>
+          <tr><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Electron direct energy conversion</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Burner</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><span class="pill p-gold">open gate</span></td><td style="padding:9px 10px;border-bottom:1px solid var(--line);color:var(--mut)">Not yet demonstrated; dated gate on the roadmap.</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><a href="/science/open-questions">Open gaps</a></td></tr>
+          <tr><td style="padding:9px 10px;border-bottom:1px solid var(--line)">End-expander heat flux</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)">Burner</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><span class="pill p-blue">requirement</span></td><td style="padding:9px 10px;border-bottom:1px solid var(--line);color:var(--mut)">A stated requirement, not yet a solved specification.</td><td style="padding:9px 10px;border-bottom:1px solid var(--line)"><a href="/science/open-questions">Open gaps</a></td></tr>
+          <tr><td style="padding:9px 10px">Synchrotron-radiation closure</td><td style="padding:9px 10px">Burner</td><td style="padding:9px 10px"><span class="pill p-blue">requirement</span></td><td style="padding:9px 10px;color:var(--mut)">Carries a known uncertainty; bounded in the published analysis.</td><td style="padding:9px 10px"><a href="/science/open-questions">Open gaps</a></td></tr>
+        </tbody>
+      </table></div>
+    </div>
     <div class="bcard" style="margin-top:16px;border-left:3px solid var(--gold)"><p style="margin:0;font-size:15px;color:#e0e5eb;line-height:1.65">Kronos is not a rendering — it is a <b>computed, published machine</b>. Every performance claim traces to a first-principles calculation on our NVIDIA GPU HPC platform: negative-triangularity turbulence suppression (CGYRO), 99.98% alpha confinement (ASCOT5), tritium self-sufficiency (OpenMC), and a converged free-boundary equilibrium (FreeGS) — <b>141 validators, frozen 2026-08-27 and deposited with permanent DOIs</b>. The core bet — that negative triangularity calms the turbulence which leaks heat — is confirmed across ion and electron scales and is robust to collisionality. What remains is engineering execution, now underway.</p></div>
     <div class="tierrow">
       <div class="tier"><span class="kick">Tier 1 · published</span><div class="c" id="t1">141</div><b>De-risking campaign (frozen)</b><div class="lk">164 gates · campaign complete at the 2026-08-27 freeze · openly deposited</div></div>
@@ -191,4 +218,6 @@ document.addEventListener('kfe:subtab',function(e){var t=e.detail;
  document.querySelectorAll('.tabsec').forEach(function(s){s.hidden=(s.getAttribute('data-tab')!==t);});
 });
 </script>
+
+<script>(function(){document.querySelectorAll('.kfe-scorecard [data-tab-link]').forEach(function(a){a.addEventListener('click',function(e){var t=a.getAttribute('data-tab-link');var b=document.querySelector('[data-tab="'+t+'"]:not(.tabsec), .tab[data-tab="'+t+'"], button[data-tab="'+t+'"]');if(b){e.preventDefault();b.click();window.scrollTo({top:0,behavior:'smooth'});}});});})();</script>
 </body></html>
