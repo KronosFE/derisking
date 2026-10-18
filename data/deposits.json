@@ -1,0 +1,144 @@
+{
+  "updated": "2026-10-18",
+  "note": "Public deposits of the Kronos open record. Checked daily by .github/workflows/deposit-status.yml; results in data/deposit_status.json.",
+  "deposits": [
+    {
+      "id": "register-1.0",
+      "name": "Physics De-Risking Register 1.0",
+      "kind": "dataset",
+      "url": "https://doi.org/10.5281/zenodo.22645689",
+      "doi": "10.5281/zenodo.22645689",
+      "home": "Zenodo"
+    },
+    {
+      "id": "cgyro",
+      "name": "CGYRO gyrokinetic transport dataset",
+      "kind": "dataset",
+      "url": "https://doi.org/10.5281/zenodo.22136279",
+      "doi": "10.5281/zenodo.22136279",
+      "home": "Zenodo"
+    },
+    {
+      "id": "breeder-paper",
+      "name": "Breeder — Hyperion (D–T spherical tokamak) deposit",
+      "kind": "dataset",
+      "url": "https://doi.org/10.5281/zenodo.21746157",
+      "doi": "10.5281/zenodo.21746157",
+      "home": "Zenodo"
+    },
+    {
+      "id": "burner-paper",
+      "name": "Burner — D–³He tandem mirror (Aegis / MetroVolt) deposit",
+      "kind": "dataset",
+      "url": "https://doi.org/10.5281/zenodo.21746479",
+      "doi": "10.5281/zenodo.21746479",
+      "home": "Zenodo"
+    },
+    {
+      "id": "magnets-paper",
+      "name": "REBCO magnet & tape system deposit",
+      "kind": "dataset",
+      "url": "https://doi.org/10.5281/zenodo.21842514",
+      "doi": "10.5281/zenodo.21842514",
+      "home": "Zenodo"
+    },
+    {
+      "id": "dec-paper",
+      "name": "Direct Energy Conversion deposit",
+      "kind": "dataset",
+      "url": "https://doi.org/10.5281/zenodo.21842864",
+      "doi": "10.5281/zenodo.21842864",
+      "home": "Zenodo"
+    },
+    {
+      "id": "ai-quantum-paper",
+      "name": "AI + ML + Quantum reproducibility deposit",
+      "kind": "dataset",
+      "url": "https://doi.org/10.5281/zenodo.21842371",
+      "doi": "10.5281/zenodo.21842371",
+      "home": "Zenodo"
+    },
+    {
+      "id": "companion-1.5",
+      "name": "Companion Paper 1.5 — AI/ML & Quantum methods",
+      "kind": "dataset",
+      "url": "https://doi.org/10.5281/zenodo.22132484",
+      "doi": "10.5281/zenodo.22132484",
+      "home": "Zenodo"
+    },
+    {
+      "id": "kodex-kmind",
+      "name": "KODEX · KMIND v0.3.0",
+      "kind": "software",
+      "url": "https://doi.org/10.5281/zenodo.23041151",
+      "doi": "10.5281/zenodo.23041151",
+      "home": "Zenodo"
+    },
+    {
+      "id": "kodex-kmit",
+      "name": "KODEX · KMIT v0.3.0",
+      "kind": "software",
+      "url": "https://doi.org/10.5281/zenodo.23041153",
+      "doi": "10.5281/zenodo.23041153",
+      "home": "Zenodo"
+    },
+    {
+      "id": "kodex-kscout",
+      "name": "KODEX · KSCOUT v0.3.0",
+      "kind": "software",
+      "url": "https://doi.org/10.5281/zenodo.23041155",
+      "doi": "10.5281/zenodo.23041155",
+      "home": "Zenodo"
+    },
+    {
+      "id": "kodex-klinq",
+      "name": "KODEX · KLINQ v0.3.0",
+      "kind": "software",
+      "url": "https://doi.org/10.5281/zenodo.23041149",
+      "doi": "10.5281/zenodo.23041149",
+      "home": "Zenodo"
+    },
+    {
+      "id": "zenodo-community",
+      "name": "Zenodo community — Kronos Fusion Energy",
+      "kind": "archive",
+      "url": "https://zenodo.org/communities/kronos_fusion_energy",
+      "home": "Zenodo"
+    },
+    {
+      "id": "pypi-ml",
+      "name": "kronos-fusion-ml on PyPI",
+      "kind": "software",
+      "url": "https://pypi.org/project/kronos-fusion-ml/",
+      "home": "PyPI"
+    },
+    {
+      "id": "pypi-quantum",
+      "name": "kronos-quantum on PyPI",
+      "kind": "software",
+      "url": "https://pypi.org/project/kronos-quantum/",
+      "home": "PyPI"
+    },
+    {
+      "id": "hf-org",
+      "name": "Hugging Face — KronosFE",
+      "kind": "software",
+      "url": "https://huggingface.co/KronosFE",
+      "home": "Hugging Face"
+    },
+    {
+      "id": "github-org",
+      "name": "GitHub — KronosFE",
+      "kind": "software",
+      "url": "https://github.com/KronosFE",
+      "home": "GitHub"
+    },
+    {
+      "id": "publications",
+      "name": "Publications — the Kronos 2026 design series",
+      "kind": "papers",
+      "url": "https://www.kronosfusionenergy.com/publications",
+      "home": "kronosfusionenergy.com"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+ "checked": "2026-10-18T22:57:00Z",
+ "deposits": [
+  {
+   "id": "register-1.0",
+   "name": "Physics De-Risking Register 1.0",
+   "kind": "dataset",
+   "home": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.22645689",
+   "doi": "10.5281/zenodo.22645689",
+   "status": 200,
+   "resolved": "https://zenodo.org/records/22645689",
+   "verdict": "ok"
+  },
+  {
+   "id": "cgyro",
+   "name": "CGYRO gyrokinetic transport dataset",
+   "kind": "dataset",
+   "home": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.22136279",
+   "doi": "10.5281/zenodo.22136279",
+   "status": 200,
+   "resolved": "https://zenodo.org/records/22136279",
+   "verdict": "ok"
+  },
+  {
+   "id": "breeder-paper",
+   "name": "Breeder — Hyperion (D–T spherical tokamak) deposit",
+   "kind": "dataset",
+   "home": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.21746157",
+   "doi": "10.5281/zenodo.21746157",
+   "status": 200,
+   "resolved": "https://zenodo.org/records/21746157",
+   "verdict": "ok"
+  },
+  {
+   "id": "burner-paper",
+   "name": "Burner — D–³He tandem mirror (Aegis / MetroVolt) deposit",
+   "kind": "dataset",
+   "home": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.21746479",
+   "doi": "10.5281/zenodo.21746479",
+   "status": 200,
+   "resolved": "https://zenodo.org/records/21746479",
+   "verdict": "ok"
+  },
+  {
+   "id": "magnets-paper",
+   "name": "REBCO magnet & tape system deposit",
+   "kind": "dataset",
+   "home": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.21842514",
+   "doi": "10.5281/zenodo.21842514",
+   "status": 200,
+   "resolved": "https://zenodo.org/records/21842514",
+   "verdict": "ok"
+  },
+  {
+   "id": "dec-paper",
+   "name": "Direct Energy Conversion deposit",
+   "kind": "dataset",
+   "home": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.21842864",
+   "doi": "10.5281/zenodo.21842864",
+   "status": 200,
+   "resolved": "https://zenodo.org/records/21842864",
+   "verdict": "ok"
+  },
+  {
+   "id": "ai-quantum-paper",
+   "name": "AI + ML + Quantum reproducibility deposit",
+   "kind": "dataset",
+   "home": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.21842371",
+   "doi": "10.5281/zenodo.21842371",
+   "status": 200,
+   "resolved": "https://zenodo.org/records/21842371",
+   "verdict": "ok"
+  },
+  {
+   "id": "companion-1.5",
+   "name": "Companion Paper 1.5 — AI/ML & Quantum methods",
+   "kind": "dataset",
+   "home": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.22132484",
+   "doi": "10.5281/zenodo.22132484",
+   "status": 200,
+   "resolved": "https://zenodo.org/records/22132484",
+   "verdict": "ok"
+  },
+  {
+   "id": "kodex-kmind",
+   "name": "KODEX · KMIND v0.3.0",
+   "kind": "software",
+   "home": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.23041151",
+   "doi": "10.5281/zenodo.23041151",
+   "status": 200,
+   "resolved": "https://zenodo.org/records/23041151",
+   "verdict": "ok"
+  },
+  {
+   "id": "kodex-kmit",
+   "name": "KODEX · KMIT v0.3.0",
+   "kind": "software",
+   "home": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.23041153",
+   "doi": "10.5281/zenodo.23041153",
+   "status": 200,
+   "resolved": "https://zenodo.org/records/23041153",
+   "verdict": "ok"
+  },
+  {
+   "id": "kodex-kscout",
+   "name": "KODEX · KSCOUT v0.3.0",
+   "kind": "software",
+   "home": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.23041155",
+   "doi": "10.5281/zenodo.23041155",
+   "status": 200,
+   "resolved": "https://zenodo.org/records/23041155",
+   "verdict": "ok"
+  },
+  {
+   "id": "kodex-klinq",
+   "name": "KODEX · KLINQ v0.3.0",
+   "kind": "software",
+   "home": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.23041149",
+   "doi": "10.5281/zenodo.23041149",
+   "status": 200,
+   "resolved": "https://zenodo.org/records/23041149",
+   "verdict": "ok"
+  },
+  {
+   "id": "zenodo-community",
+   "name": "Zenodo community — Kronos Fusion Energy",
+   "kind": "archive",
+   "home": "Zenodo",
+   "url": "https://zenodo.org/communities/kronos_fusion_energy",
+   "doi": null,
+   "status": 200,
+   "resolved": "https://zenodo.org/communities/kronos_fusion_energy/records",
+   "verdict": "ok"
+  },
+  {
+   "id": "pypi-ml",
+   "name": "kronos-fusion-ml on PyPI",
+   "kind": "software",
+   "home": "PyPI",
+   "url": "https://pypi.org/project/kronos-fusion-ml/",
+   "doi": null,
+   "status": 200,
+   "resolved": "https://pypi.org/project/kronos-fusion-ml/",
+   "verdict": "ok"
+  },
+  {
+   "id": "pypi-quantum",
+   "name": "kronos-quantum on PyPI",
+   "kind": "software",
+   "home": "PyPI",
+   "url": "https://pypi.org/project/kronos-quantum/",
+   "doi": null,
+   "status": 200,
+   "resolved": "https://pypi.org/project/kronos-quantum/",
+   "verdict": "ok"
+  },
+  {
+   "id": "hf-org",
+   "name": "Hugging Face — KronosFE",
+   "kind": "software",
+   "home": "Hugging Face",
+   "url": "https://huggingface.co/KronosFE",
+   "doi": null,
+   "status": 200,
+   "resolved": "https://huggingface.co/KronosFE",
+   "verdict": "ok"
+  },
+  {
+   "id": "github-org",
+   "name": "GitHub — KronosFE",
+   "kind": "software",
+   "home": "GitHub",
+   "url": "https://github.com/KronosFE",
+   "doi": null,
+   "status": 200,
+   "resolved": "https://github.com/KronosFE",
+   "verdict": "ok"
+  },
+  {
+   "id": "publications",
+   "name": "Publications — the Kronos 2026 design series",
+   "kind": "papers",
+   "home": "kronosfusionenergy.com",
+   "url": "https://www.kronosfusionenergy.com/publications",
+   "doi": null,
+   "status": 200,
+   "resolved": "https://www.kronosfusionenergy.com/publications",
+   "verdict": "ok"
+  }
+ ],
+ "summary": {
+  "ok": 18,
+  "unverified": 0,
+  "fail": 0
+ }
+}
