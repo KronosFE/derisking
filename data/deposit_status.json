@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18T15:39:32Z",
+ "checked": "2026-11-19T15:45:07Z",
  "deposits": [
   {
    "id": "register-1.0",
@@ -19,9 +19,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.22136279",
    "doi": "10.5281/zenodo.22136279",
-   "status": 500,
-   "resolved": null,
-   "verdict": "fail"
+   "status": 200,
+   "resolved": "https://zenodo.org/records/22136279",
+   "verdict": "ok"
   },
   {
    "id": "breeder-paper",
@@ -129,9 +129,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.23041149",
    "doi": "10.5281/zenodo.23041149",
-   "status": 502,
-   "resolved": null,
-   "verdict": "fail"
+   "status": 200,
+   "resolved": "https://zenodo.org/records/23041149",
+   "verdict": "ok"
   },
   {
    "id": "zenodo-community",
@@ -140,9 +140,9 @@
    "home": "Zenodo",
    "url": "https://zenodo.org/communities/kronos_fusion_energy",
    "doi": null,
-   "status": 500,
-   "resolved": null,
-   "verdict": "fail"
+   "status": 200,
+   "resolved": "https://zenodo.org/communities/kronos_fusion_energy/records",
+   "verdict": "ok"
   },
   {
    "id": "pypi-ml",
@@ -201,8 +201,8 @@
   }
  ],
  "summary": {
-  "ok": 15,
+  "ok": 18,
   "unverified": 0,
-  "fail": 3
+  "fail": 0
  }
 }
