@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-20T15:27:09Z",
+ "checked": "2026-11-21T14:39:14Z",
  "deposits": [
   {
    "id": "register-1.0",
@@ -140,9 +140,9 @@
    "home": "Zenodo",
    "url": "https://zenodo.org/communities/kronos_fusion_energy",
    "doi": null,
-   "status": 200,
-   "resolved": "https://zenodo.org/communities/kronos_fusion_energy/records",
-   "verdict": "ok"
+   "status": 500,
+   "resolved": null,
+   "verdict": "fail"
   },
   {
    "id": "pypi-ml",
@@ -201,8 +201,8 @@
   }
  ],
  "summary": {
-  "ok": 18,
+  "ok": 17,
   "unverified": 0,
-  "fail": 0
+  "fail": 1
  }
 }
