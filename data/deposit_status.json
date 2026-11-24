@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-23T18:08:29Z",
+ "checked": "2026-11-24T17:44:45Z",
  "deposits": [
   {
    "id": "register-1.0",
@@ -8,9 +8,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.22645689",
    "doi": "10.5281/zenodo.22645689",
-   "status": 200,
-   "resolved": "https://zenodo.org/records/22645689",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "cgyro",
@@ -19,9 +19,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.22136279",
    "doi": "10.5281/zenodo.22136279",
-   "status": 200,
-   "resolved": "https://zenodo.org/records/22136279",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "breeder-paper",
@@ -30,9 +30,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.21746157",
    "doi": "10.5281/zenodo.21746157",
-   "status": 200,
-   "resolved": "https://zenodo.org/records/21746157",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "burner-paper",
@@ -41,9 +41,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.21746479",
    "doi": "10.5281/zenodo.21746479",
-   "status": 200,
-   "resolved": "https://zenodo.org/records/21746479",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "magnets-paper",
@@ -52,9 +52,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.21842514",
    "doi": "10.5281/zenodo.21842514",
-   "status": 200,
-   "resolved": "https://zenodo.org/records/21842514",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "dec-paper",
@@ -63,9 +63,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.21842864",
    "doi": "10.5281/zenodo.21842864",
-   "status": 200,
-   "resolved": "https://zenodo.org/records/21842864",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "ai-quantum-paper",
@@ -74,9 +74,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.21842371",
    "doi": "10.5281/zenodo.21842371",
-   "status": 200,
-   "resolved": "https://zenodo.org/records/21842371",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "companion-1.5",
@@ -85,9 +85,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.22132484",
    "doi": "10.5281/zenodo.22132484",
-   "status": 200,
-   "resolved": "https://zenodo.org/records/22132484",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "kodex-kmind",
@@ -96,9 +96,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.23041151",
    "doi": "10.5281/zenodo.23041151",
-   "status": 200,
-   "resolved": "https://zenodo.org/records/23041151",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "kodex-kmit",
@@ -107,9 +107,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.23041153",
    "doi": "10.5281/zenodo.23041153",
-   "status": 200,
-   "resolved": "https://zenodo.org/records/23041153",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "kodex-kscout",
@@ -118,9 +118,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.23041155",
    "doi": "10.5281/zenodo.23041155",
-   "status": 200,
-   "resolved": "https://zenodo.org/records/23041155",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "kodex-klinq",
@@ -129,9 +129,9 @@
    "home": "Zenodo",
    "url": "https://doi.org/10.5281/zenodo.23041149",
    "doi": "10.5281/zenodo.23041149",
-   "status": 200,
-   "resolved": "https://zenodo.org/records/23041149",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "zenodo-community",
@@ -140,9 +140,9 @@
    "home": "Zenodo",
    "url": "https://zenodo.org/communities/kronos_fusion_energy",
    "doi": null,
-   "status": 200,
-   "resolved": "https://zenodo.org/communities/kronos_fusion_energy/records",
-   "verdict": "ok"
+   "status": 403,
+   "resolved": null,
+   "verdict": "unverified"
   },
   {
    "id": "pypi-ml",
@@ -201,8 +201,8 @@
   }
  ],
  "summary": {
-  "ok": 18,
-  "unverified": 0,
+  "ok": 5,
+  "unverified": 13,
   "fail": 0
  }
 }
